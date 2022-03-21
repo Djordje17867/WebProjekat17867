@@ -1,0 +1,620 @@
+.GlavniKontejner{
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+    background-image: url("../Klijentski deo/fss.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.glavniNaslov{
+    font-size: 40px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.divOpcije{
+    display:flex;
+    flex-direction: row;
+}
+
+.CrtajSudDiv{
+    font-size: 20px;
+    color: white;
+}
+
+.CrtajSudDivLabgl{
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.crtajsuddivgl{
+    display:flex;
+    flex-direction: column;
+    background-image: url("../Klijentski deo/poz1.jpg");
+    margin: 10px;
+    padding: 2px 10px;
+    border-radius:10px;
+}
+
+.CrtajSudDiv{
+    margin-left: 7px;
+    margin-top: 4px;
+}
+
+.NaslovDugmici{
+    font-size: 25px;
+    color:whitesmoke;
+}
+
+.notAllowed{
+    cursor: not-allowed;
+}
+
+body{
+    margin: 0px;
+}
+
+
+.Heder{
+    display: flex;
+    justify-content: center;
+    color:#fdfdff;
+}
+
+.Dugmici{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+
+.Prikaz{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.DugmiciNaslov{
+    font-size: 20px;
+}
+
+.labelaDugmici{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    margin:3px;
+}
+
+.divZaRB{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.selectSudija{
+    background-color: navajowhite;
+}
+
+.selectTim{
+    background-color:#45a049;
+}
+.PrikazLevo{
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+   
+    color: black;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+    height: fit-content;
+    flex: 1;
+}
+
+.PrikazDesno{
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    /* align-items: center; */
+
+}
+
+.PrikazLevoDodajPadding{
+    padding: 14px 20px;
+}
+
+.PrikazLevoObrisiPadding{
+    padding: 0px;
+}
+
+.PrikazLevo input, .PrikazLevo select{
+    background-color: rgb(20 250 180 / 80%);
+    font-size: 15px;
+}
+.PrikazLevo input:focus, .PrikazLevo select:focus{
+    background-color: rgb(80 170 240 / 80%);
+}
+
+
+
+option{
+    align-items: center;
+    font-size: 17px;
+}
+
+.divDugmiciDelegat, .divDugmiciSudija, .divDugmiciMec, .divDugmiciTim{
+    margin: 20px;
+    align-items: center;
+
+}
+
+.DugmeSudija, .DugmeDelegat, .DugmeTim{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.divDugmiciKorisnikIzmeni{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divDodajKorisnikaSifra, .divDodajKorisnikaJMBG, .divDodajKorisnikaSlika, .divDodajKorisnikaImePrezime, .divDodajKorisnikaGradAdresa, .divDodajKorisnikaTelefonEmail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.divDodajKorisnikaJMBGSifra, .divDodajKorisnikaImePrezime, .divDodajKorisnikaGradAdresa, .divDodajKorisnikaTelefonEmail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.divDodajKorisnikaGrad, .divDodajKorisnikaAdresa, .divDodajKorisnikaIme, .divDodajKorisnikaPrezime, .divDodajKorisnikaTelefon, .divDodajKorisnikaEmail{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.divFilterCena, .divFilterGodina, .divFilterMarkaModel, .divFilterKaroserijaGorivo, .divFilterKilometraza{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timovidodaj{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.timovidodajsud{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.vratiMecLab{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+.MecSud1, .MecSud2, .MecSud3, .MecSud4, .MecTim1, .MecTim2{
+    max-width: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+input, select{
+  width: 80%;
+  padding: 8px 15px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid dimgray;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color:honeydew;
+  max-width: 210px;
+  min-width: 120px;
+}
+
+
+
+.btnDodajKorisnika{
+    display: flex;
+    justify-content: center;
+}
+
+.btnDodaj, .btnIzmeni, .btnNadji, .btnFiltriraj, .btnObrisi{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnDodaj{
+    background-color: #4CAF50;
+    align-items: center;
+}
+
+.btnDodaj:hover{
+    background-color: #45a049;
+}
+
+.btnFiltriraj, .btnNadji{
+    background-color: #3b3bff;
+}
+
+.btnFiltriraj:hover, .btnNadji:hover{
+    background-color: #1b3bdf;
+}
+
+.btnIzmeni{
+    background-color: #FCA130;
+}
+
+.btnIzmeni:hover{
+    background-color: #E7A130;
+}
+
+.btnObrisi{
+    background-color: #ee0000;
+}
+
+.btnObrisi:hover{
+    background-color: #da0000;
+}
+
+.dodDelLab{
+    color: white;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .dodDelLab{color:black}
+    
+}
+
+
+
+.divgornji{
+    max-height: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+}
+
+.divUnos{
+    display: flex;
+    flex-direction: column;
+}
+
+.dodDelLab1{
+    font-size: 20px;
+    color: white;
+    padding: 2px 10px;
+}
+
+.DelInput{
+    margin-left: 10px;
+    max-width: 150px;
+}
+
+.DodDelDiv{
+    background-image: url("../Klijentski deo/poz1.jpg");
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.Vraca{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+button{
+    background-color:orange;
+    color: white;
+    padding: 2px 10px;
+    margin: 8px 2px;
+    border: 1px dotted black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: #390000;
+}
+
+.divFilterMarkaModel{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.divFilterModel, .divFilterMarka{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.divFilterGodina{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.divFilterGodinaDo, .divFilterGodinaOd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divFilterKaroserijaGorivo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.divFilterKaroserija, .divFilterGorivo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kontejnerHeader{
+    background-color: #1b3bdf;
+}
+.filterKontejner{
+    display: flex;
+    flex-direction: column;
+}
+
+.kontejnerDugmici{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lblPrikazLevoNaslov{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.divDodajKorisnikaUsername, .divKorisnikIzmeniJMBG, .divKorisnikIzmeniUsername, .divAutomobilIzmeniUsername{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divKorisnikObrisiDugme, .divKorisnikIzmeniDugme{
+    display: flex;
+    justify-content: center;
+}
+
+.divDodajKorisnikaUsernameSifra, .divOglasDodajJMBGVlasnikaSifra, .divKorisnikObrisiJMBGSifra, .divKorisnikIzmeniUsernameSifra, .divAutomobilIzmeniUsernameSifra, .divKorisnikIzmeniJMBGSifra, .divOglasObrisiJMBGSifra, .divKorisnikIzmeniGradAdresa, .divKorisnikIzmeniTelefonEmail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.divOglasObrisiDugmeNadji, .divKorisnikObrisiJMBG,.divKorisnikObrisiSifra, .divLabelaIzmena, .divAutomobilIzmeniSifra, .divKorisnikIzmeniSifra, .divOglasObrisiJMBG, .divOglasObrisiSifra, .divOglasObrisiDugmePrijaviSe, .divKorisnikIzmeniJMBG, .divKorisnikIzmeniGrad, .divKorisnikIzmeniAdresa, .divKorisnikIzmeniTelefon, .divKorisnikIzmeniEmail{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divLabelaIzmena{
+    margin: 10px;
+}
+
+.btnKorisnikIzmeni{
+    display: flex;
+    justify-content: center;
+}
+
+.divOglasIzmeniDugmePrijaviSe, .divKOglasIzmeniSifra, .divOglasIzmeniJMBG, .divOglasDodajPrijaviSeDugme, .divOglasDodajJMBGVlasnika, .divOglasDodajSifra, .divKorisnikZaboravljenaSifraDugme, .divKorisnikZaboravljenaSifraJMBG, .divKorisnikZaboravljenaUsername, .divKorisnikZaboravljenaSifraPrezime, .divKorisnikZaboravljenaSifraIme, .divKorisnikZaboravljenaSifraAdresa, .divKorisnikZaboravljenaSifraGrad, .divKorisnikZaboravljenaSifraEmail, .divKorisnikZaboravljenaSifraTelefon, .divAutomobilDodajBrojSasije, .divAutomobilDodajMarka, .divAutomobilDodajModel, .divAutomobilDodajGodiste, .divAutomobilDodajKilometraza, .divAutomobilDodajKaroserija, .divAutomobilDodajGorivo, .divAutomobilDodajKubikaza, .divAutomobilDodajSnaga, .divAutomobilDodajJMBGVlasnika, .divAutomobilDodajPijaca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divOglasDodajBrojSasijePijaca, .divKorisnikZaboravljenaSifraTelefonEmail, .divKorisnikZaboravljenaSifraGradAdresa, .divKorisnikZaboravljenaSifraImePrezime, .divKorisnikZaboravljenaSifraJMBGUsername, .divAutomobilDodajMarkaModel, .divAutomobilDodajGodisteKilometraza, .divAutomobilDodajKaroserijaGorivo, .divAutomobilDodajKubikazaSnaga, .divAutomobilDodajJMBGVlasnikaPijaca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.inputOglasIzmeniSifraOglasa, .inputKorisnikNadjiOglaseJMBG, .inputOglasIzmeniBrojSasije, .inputAutomobilDodajBrojSasije, .inputAutomobilIzmeniBrojSasije, .inputNadjiOglas{
+    max-width: 250px;
+}
+
+.divAutomobilDodajDugme{
+    display: flex;
+    justify-content: center;
+}
+
+.divKorisnikNadjiOglaseDugme, .divKorisnikNadjiOglaseJMBG, .divOglasObrisiDugme, .divOglasObrisiSifraOglasa, .divOglasIzmeniDugmeDole, .divOglasIzmeniDole, .divOglasIzmeniDugme, .divOglasIzmeniSifraOglasa, .divOglasDodajDugme, .divOglasDodajPijacu, .divOglasDodajBrojSasije, .divOglasDodajJMBGVlasnika, .divAutomobilIzmeniBrojSasije, .divAutomobilIzmeniDugme1, .divAutomobilIzmeniDugme, .divAutomobilIzmeniKilometraza, .divAutomobilIzmeniDugmeDole, .divOglasFiltrirajDugme,.divOglasNadjiSifraOglasa, .divOglasNadjiBrojSasije, .divOglasNadjiDugme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divAutomobilIzmeniKilometraza, .divOglasFiltrirajDugme{
+    margin-top: 10px;
+}
+
+.divNoviKorisnik, .divNoviAutomobil, .divNovaPijaca, .divNoviOglas{
+    display: flex;
+    flex-direction: column;
+    padding: 14px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    opacity: 90%;
+    height: fit-content;
+    align-items: center;
+    max-width: 50%;
+}
+
+.divNoviOglas{
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+.divNovaPijacaTelefon, .divNovaPijacaLokacija, .divNovaPijacaNaziv, .divNoviKorisnikJMBG, .divNoviKorisnikIme, .divNoviKorisnikPrezime, .divNoviKorisnikGrad, .divNoviKorisnikAdresa, .divNoviKorisnikTelefon, .divNoviKorisnikEmail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.divNoviAutomobilPijaca, .divNoviAutomobilJMBGVlasnika, .divNoviAutomobilSnaga, .divNoviAutomobilKubikaza, .divNoviAutomobilGorivo, .divNoviAutomobilKaroserija, .divNoviAutomobilKilometraza, .divNoviAutomobilGodiste, .divNoviAutomobilModel, .divNoviAutomobilMarka, .divNoviAutomobilBrojSasije{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+    
+}
+
+.noviKorisnikSlika, .izaberiSliku{
+    max-width: 100px;
+    max-height: 100px;
+    
+}
+
+.divNoviKorisnikSlika{
+    display: flex;
+    justify-content: center;
+}
+
+.divOglasIzmeniJMBGSifra, .divNoviAutomobilMarkaModel, .divNoviAutomobilGodisteKilometraza, .divNoviAutomobilKaroserijaGorivo, .divNoviAutomobilKubikazaSnaga, .divNoviAutomobilJMBGVlasnikaPijaca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* @media (min-width: 200px){
+    .divNoviAutomobil{
+        margin:0px;
+        padding: 0px;
+    }
+} */
+
+.divOglasDodajCena, .divNoviAutomobilPijaca, .divNoviAutomobilJMBGVlasnika, .divNoviAutomobilSnaga, .divNoviAutomobilKubikaza, .divNoviAutomobilGorivo, .divNoviAutomobilKaroserija, .divNoviAutomobilKilometraza, .divNoviAutomobilGodiste, .divNoviAutomobilModel, .divNoviAutomobilMarka, .divNoviAutomobilBrojSasije{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lblVlasnikPijaca:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.AdivNoviOglasSifraOglasa, .AdivNoviOglasDatum, .AdivNoviOglasCena, .divNoviOglasMarkaModel, .divNoviOglasGodisteKilometraza, .divNoviOglasKaroserijaGorivo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+[class^="divNoviOglasSifraOglasa"], [class^="divNoviOglasDatum"], [class^="divNoviOglasGodisteKilometraza"], [class^="divNoviOglasCena"] , [class^="divNoviOglasMarkaModel"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+[class^="divNoviOglas"]{
+    display: flex;
+    flex-direction: column;
+    padding: 7px 10px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    opacity: 90%;
+    max-width: 65%;
+    align-items: center;
+    height: fit-content;
+}
+
+[class^="divNoviOglasGorivo"], [class^="divNoviOglasKaroserija"], [class^="divNoviOglasCena"], [class^="divNoviOglasKilometraza"], [class^="divNoviOglasGodiste"], [class^="divNoviOglasMarkaModel"], [class^="divNoviOglasGodisteKilometraza"], [class^="divNoviOglasKaroserijaGorivo"]{
+    margin: 0px;
+    background-image: none;
+
+}
+
+[class^="divNoviOglasKilometraza"]{
+    padding: 20px;
+} 
+
+/* .divNoviAutomobilMarka{
+    margin-right: 25px;
+}
+
+.divNoviAutomobilModel{
+    margin-left: 25px;
+} */
