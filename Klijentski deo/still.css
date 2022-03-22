@@ -134,11 +134,12 @@ body{
     flex-direction: row;
     align-items: center;
     color: black;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 20px;
     margin-right: 20px;
     border-radius: 20px;
     /* align-items: center; */
+    flex-grow: 1;
 
 }
 
@@ -308,6 +309,12 @@ input, select{
 
 @media  screen and (max-width: 350px) {
     .crtajsuddivgl{margin:10px};
+    .prikazDesno{margin: 2px};
+}
+
+@media screen and (max-width: 400px) {
+    .prikazDesno{margin-left:5px};
+    .prikazDesno{margin-right:5px};
     
 }
 
