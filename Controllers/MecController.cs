@@ -53,7 +53,7 @@ namespace WebApi.Controllers
             {
                 return BadRequest("Uneli ste los broj licence sudija");
             }
-            if(kolo < 1)
+            if(kolo < 1 || kolo>5)
             {
                 return BadRequest("Nije dobro kolo");
             }
@@ -65,6 +65,11 @@ namespace WebApi.Controllers
                     var sudije = await Context.Sudije.Where(p => sudlic.Contains(p.BrLicence)).ToListAsync();
                     var delegat = await Context.Delegati.Where(p => p.BrLicence == licdel).FirstOrDefaultAsync();
                     var timovi = await Context.Timovi.Where(p => ImeTimova.Contains(p.Ime)).ToListAsync();
+                    var mecevi = await Context.Mecevi.Where(p=> p.Kolo == kolo && (p.SpojTim.Contains(timovi[0]) || p.SpojTim.Contains(timovi[1]) )).ToListAsync();
+                    if (mecevi != null)
+                    {
+                        return BadRequest("Timovi vec igraju u tom kolu");
+                    }
                     if(timovi.First().RangLige != timovi[1].RangLige)
                     {
                         return BadRequest("Timovi ne igraju u istoj ligi");
