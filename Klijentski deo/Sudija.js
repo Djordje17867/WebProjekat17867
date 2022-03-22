@@ -85,7 +85,7 @@ export class Sudija{
 
         l = document.createElement("label");
         l.className = "DodSudDivLab";
-        l.innerHTML = "Redni licence : ";
+        l.innerHTML = "Broj licence : ";
         m.appendChild(l);
 
         l = document.createElement("label");
@@ -164,7 +164,7 @@ export class Sudija{
 
         l = document.createElement("label");
         l.className = "DodSudDivLab";
-        l.innerHTML = "Redni licence : ";
+        l.innerHTML = "Broj licence : ";
         m.appendChild(l);
 
         l = document.createElement("label");
@@ -258,7 +258,7 @@ export class Sudija{
 
         l = document.createElement("label");
         l.className = "DodSudDivLab";
-        l.innerHTML = "Redni licence : ";
+        l.innerHTML = "Broj licence : ";
         m.appendChild(l);
 
         l = document.createElement("label");
