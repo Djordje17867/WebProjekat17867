@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Djordje\\Desktop\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\Djordje\\Desktop\\Web Projekat 17867\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Djordje\\Desktop\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\Djordje\\Desktop\\Web Projekat 17867\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Djordje\\Desktop\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Djordje\\Desktop\\Web Projekat 17867\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\Djordje\\Desktop\\WebApi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\Djordje\\Desktop\\Web Projekat 17867\\WebApi.csproj",
         "packagesPath": "C:\\Users\\Djordje\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Djordje\\Desktop\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\Djordje\\Desktop\\Web Projekat 17867\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Djordje\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -306,6 +306,11 @@ input, select{
     
 }
 
+@media  screen and (max-width: 350px) {
+    .crtajsuddivgl{margin:10px};
+    
+}
+
 
 
 .divgornji{

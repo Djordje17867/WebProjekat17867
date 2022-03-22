@@ -35,6 +35,66 @@ export class Sudija{
 
     }
 
+    
+
+    crtajSudije(host){
+
+        let l;
+        let i;
+        let m;
+
+        i = document.createElement("div");
+        i.className = "crtajsuddivgl"
+        host.appendChild(i);
+
+        m = document.createElement("div");
+        m.className = "CrtajSudDivLabgl"
+        i.appendChild(m)
+
+        m = document.createElement("div");
+        m.className = "CrtajSudDiv"
+        i.appendChild(m)
+
+        l = document.createElement("label");
+        l.className = "DodSudDivLab";
+        l.innerHTML = "Ime : ";
+        m.appendChild(l);
+
+        l = document.createElement("label");
+        l.innerHTML = this.ime;
+        l.className = "DodSudDivLab";
+        m.appendChild(l);
+
+        m = document.createElement("div");
+        m.className = "CrtajSudDiv"
+        i.appendChild(m)
+
+        l = document.createElement("label");
+        l.className = "DodSudDivLab";
+        l.innerHTML = "Prezime : ";
+        m.appendChild(l);
+
+        l = document.createElement("label");
+        l.innerHTML = this.prezime;
+        l.className = "DodSudDivLab";
+        m.appendChild(l);
+
+        m = document.createElement("div");
+        m.className = "CrtajSudDiv"
+        i.appendChild(m)
+
+        l = document.createElement("label");
+        l.className = "DodSudDivLab";
+        l.innerHTML = "Redni licence : ";
+        m.appendChild(l);
+
+        l = document.createElement("label");
+        l.innerHTML = this.brLic;
+        l.className = "DodSudDivLab";
+        m.appendChild(l);
+        
+    }
+
     crtajSudijuDiv(host){
         host.innerHTML = "";
         host.classList.add("SudijaDodajCrt");

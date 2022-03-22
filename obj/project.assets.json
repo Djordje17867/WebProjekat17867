@@ -5948,11 +5948,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Djordje\\Desktop\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\Djordje\\Desktop\\Web Projekat 17867\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "c:\\Users\\Djordje\\Desktop\\WebApi\\WebApi.csproj",
+      "projectPath": "C:\\Users\\Djordje\\Desktop\\Web Projekat 17867\\WebApi.csproj",
       "packagesPath": "C:\\Users\\Djordje\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Djordje\\Desktop\\WebApi\\obj\\",
+      "outputPath": "C:\\Users\\Djordje\\Desktop\\Web Projekat 17867\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Djordje\\AppData\\Roaming\\NuGet\\NuGet.Config",

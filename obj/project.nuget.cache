@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hxCHqay48KpcWscH4hRbyTTmOtTUazBMyNSlSFi3burZQc8HNNV/KWEMBhkNGp6kiOVzzQ+lBZzH9YNDbxDm7g==",
+  "dgSpecHash": "ZjHvrrCoQ+NUKbuVSPdez9WRaUPwH2OHNXbczfyA00dtYL063rimH0+2ZY3v788YUMk2iD+ZMTpVeqq7HbJ4kA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Djordje\\Desktop\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\Djordje\\Desktop\\Web Projekat 17867\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Djordje\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Djordje\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

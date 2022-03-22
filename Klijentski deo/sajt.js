@@ -228,6 +228,11 @@ export class Sajt{
         op.value = 3;
         se.appendChild(op);
 
+        op = document.createElement("option");
+        op.innerHTML = "Prikazi sudije";
+        op.value = 4;
+        se.appendChild(op);
+
         dugme = document.createElement("button");
         dugme.innerHTML = "Izvrsi";
         dugme.className = "DugmeSudija";
@@ -250,8 +255,11 @@ export class Sajt{
             else if (provera==2){
                 this.IzmeniPozSudije(desno);
             }
-            else{
+            else if(provera ==3){
                 this.izbrisiSudiju(desno);
+            }
+            else{
+                this.vratiSudije(desno);
             }
         } 
     }
@@ -359,6 +367,7 @@ export class Sajt{
         op.innerHTML = "Izbrisi tim";
         op.value = 3;
         se.appendChild(op);
+        
 
         dugme = document.createElement("button");
         dugme.innerHTML = "Izvrsi";
@@ -659,6 +668,7 @@ export class Sajt{
                 if(s.ok){
                     s.json().then(data=>{
                         console.log(data);
+                        alert("Uspesno izbrisan delegat ");
                     })
                 }
                 else{
@@ -1235,6 +1245,7 @@ export class Sajt{
                 if(s.ok){
                     s.json().then(data=>{
                         console.log(data);
+                        alert("Uspesno izmenjen kapiten tima : " + data.ime);
                     })
                 }
                 else{
@@ -1315,6 +1326,7 @@ export class Sajt{
                 if(s.ok){
                     s.json().then(data=>{
                         console.log(data);
+                        alert("Uspesno promenjena liga tima : "+data.ime);
                     })
                 }
                 else{
@@ -1704,6 +1716,47 @@ export class Sajt{
         }
 
         
+    }
+
+    vratiSudije(host){
+
+        fetch("https://localhost:5001/Sudija/Preuzmi/",
+            {
+                method:"GET"
+            }).then(s=>{
+                if(s.ok){
+                    s.json().then(data=>{
+                        console.log(data);
+                        let desno = this.kontejner.querySelector(".Vraca");
+                        desno.innerHTML="";
+                        let m = document.createElement("div");
+                        m.className = "CrtajSudDiv"
+                        desno.appendChild(m);
+
+                        let l = document.createElement("label");
+                        l.className = "DodSudDivLab";
+                        l.innerHTML = "Lista sudija : ";
+                        m.appendChild(l);
+
+                        data.forEach(me=>{
+                            console.log(me);
+                            var sud = new Sudija(me.ime, me.prezime, me.brlic );
+                            sud.crtajSudije(desno);
+                            /*console.log(me.timovi[0].ime+me.timovi[1].ime);
+                            var mec = new Mec(me.timovi[0].ime,me.timovi[1].ime);
+                            mec.crtajUtakmicu(desno);*/
+                        
+                        })
+
+                    })
+                }
+                else{
+                    s.text().then(data=>{
+                        alert(data);
+                    })
+                }
+            })
+
     }
 
 }

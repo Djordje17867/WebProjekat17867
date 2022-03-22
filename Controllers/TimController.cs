@@ -92,7 +92,7 @@ namespace WebApi.Controllers
                 {
                     tim.RangLige = NLiga;
                     await Context.SaveChangesAsync();
-                    return Ok(200);
+                    return Ok(tim);
                 }
                 return BadRequest("Ne postoji tim sa tim imenom");
             }
@@ -120,7 +120,7 @@ namespace WebApi.Controllers
                 {
                     tim.ImeKapitena = NIme;
                     await Context.SaveChangesAsync();
-                    return Ok(200);
+                    return Ok(tim);
                 }
                 return BadRequest("Ne postoji tim sa tim imenom");
             }
